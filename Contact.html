@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+    <title>Contact us</title>
+</head>
+<body>
+    
+   <div class="nav">
+        <h2 id="logo">HomeSync</h2>
+        <ul class="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li class="services"><a href="#">Services <i class="fa-solid fa-angle-down"></i></a>
+            <ul class="dropdown">
+                <li><a href="#">Device Installation</a></li>
+                <li><a href="#">Home Monitoring</a></li>
+                <li><a href="#">App Control</a></li>
+                <li><a href="#">Optimization</a></li>
+            </ul></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+
+    <div class="contact">
+    <h2>Contact Us</h2>
+    <p>Experience seamless smart living with us.
+Contact our team for personalized solutions, support, and expert guidance.</p>
+    <div class="contact">
+        <form name="contactus" onsubmit="return validationform()">
+            <input type="text" name="name" required placeholder="Enter your name">
+            <input type="text" name="contact number" required placeholder="enter your contact details">
+            <input type="email" name="email" required placeholder="enter your email">
+            <textarea name="message" placeholder="Enter your message"></textarea>
+            <button id="formSubmit">Submit</button>
+        </form>
+    </div>
+    </div>
+
+    <footer>
+    <p>&copy; 2025 HomeSync. All rights reserved.</p>
+    <p>Privacy Policy     |     Terms     |     Contact</p>
+    </footer>
+
+    <script>
+        let validationform=()=>{
+            let name = document.forms["contactus"]["name"].value;
+            let email=document.forms["contactus"]["email"].value;
+            let contact_num=document.forms["contactus"]["contact number"].value;
+            if (name==""||name==" "||email==""|| email==" "||contact_num==""||contact_num==" "){
+                alert("Enter all the important fields");
+            }
+            else{
+                alert("Submitted!");
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
